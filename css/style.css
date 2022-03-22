@@ -8,6 +8,10 @@ main{
 
 /* ASIDE */
 
+.aside-smartphone{
+  display: none;
+}
+
 aside{
   width: 250px;
   flex-shrink: 0;

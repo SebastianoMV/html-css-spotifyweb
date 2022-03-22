@@ -15,3 +15,30 @@
   }
   
 }
+
+@media screen and (max-width: 550px) {
+  .menu-aside,
+  .playlist,
+  .bottom-aside{
+    display: none;
+  }
+
+
+  aside{
+    width: 50px;
+    padding: 10px;
+  }
+
+  .aside-smartphone{
+    display: block;
+  }
+
+  .aside-smartphone img{
+    margin-bottom: 5px;
+  }
+
+  .container .premium{
+    width: calc( 100% - 50px);
+  }
+
+}
