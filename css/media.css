@@ -1,0 +1,17 @@
+@media screen and (max-width: 1280px){
+  .album{
+    width: calc((100% - 50px) / 4);
+  }
+
+  .recently{
+    flex-wrap: wrap;
+  }
+  
+}
+
+@media screen and (max-width: 736px) {
+  .album{
+    width: calc((100% - 50px) / 2);
+  }
+  
+}

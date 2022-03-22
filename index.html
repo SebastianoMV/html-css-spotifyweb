@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
           <i class="fa-solid fa-square-plus"></i>
           <span>Crea Playlist</span>
         </div>
-        <ul>
+        <ul class="ul-aside">
           <li><a href="">Nome Playlist</a></li>
           <li><a href="">Nome Playlist</a></li>
           <li><a href="">Nome Playlist</a></li>
@@ -66,18 +67,101 @@
 
     </aside>
 
+    <!-- /MENU ASIDE -->
+
+    <!-- CONTAINER MAIN -->
+
     <div class="container">
       <div class="premium">
-
+        <a class="premium-btn" href="#">EFFETTUA L'UPGRADE</a>
       </div>
-      
+
+      <div class="ul-main display-flex">
+        <ul class="display-flex">
+          <li><a href="#"></a>IN EVIDENZA</li>
+          <li><a href="#"></a>PODCAST</li>
+          <li><a href="#"></a>CLASSIFICHE</li>
+          <li><a href="#"></a>GENERI E MOOD</li>
+          <li><a href="#"></a>NUOVE USCITE</li>
+          <li><a href="#"></a>SCOPRI</li>
+        </ul>
+      </div>
+
+      <h2>Recently played</h2>
+
+      <section class="recently display-flex">
+        <div class="album">
+          <img src="img/frah-contento.jpg" alt="Album">
+        </div>
+        <div class="album">
+          <img src="img/willie-peyote.jpg" alt="Album">
+        </div>
+        <div class="album">
+          <img src="img/queenii.jpg" alt="Album">
+        </div>
+        <div class="album">
+          <img src="img/RATM.jpg" alt="Album">
+        </div>
+        <div class="album">
+          <img src="img/zencircus.jpg" alt="Album">
+        </div>
+        <div class="album">
+          <img src="img/Caparezza.png" alt="Album">
+        </div>
+      </section>
+
     </div>
+
+    
+   
 
   </main>
 
+  <!-- /SCONTAINER MAIN -->
 
-  <footer class="display-flex">
-    
+
+
+  <!-- FOOTER -->
+
+  <footer class="display-flex space-between">
+    <div class="nav-left display-flex space-between">
+       <img src="img/frah-contento.jpg" alt="Brano in riproduzione">
+        <div>
+          <h5>Frah Quintale</h5>
+          <p>Contento</p>
+        </div>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+    </div>
+
+    <div class="nav-center display-flex column space-evenly">
+      <div class="comand display-flex space-between">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <div class="circle-play">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+      </div>
+      <div class="canzone-play display-flex space-between">
+        <span>0:25</span>
+        <div class="barra barra-lunga">
+          <div class="barra barra-corta"></div>
+        </div>
+        <span>4:35</span>
+      </div>
+
+    </div>
+
+    <div class="nav-right display-flex space-between">
+       <i class="fa-solid fa-list"></i>
+       <i class="fa-solid fa-desktop"></i>
+       <i class="fa-solid fa-volume-high"></i>
+       <div class="barra barra-mini">
+        <div class="barra barra-mini-corta"></div>
+      </div>
+   </div>
 
   </footer>
   

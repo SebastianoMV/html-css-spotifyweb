@@ -12,15 +12,31 @@
   flex-direction: column;
 }
 
+.space-between{
+  justify-content: space-between;
+}
 
+.space-around{
+  justify-content: space-around;
+}
 
+.space-evenly{
+  justify-content: space-evenly;
+}
 
+.ul-aside li a,
+.ul-main ul li a{
+  color: #6f6f6f;
+}
 
+.album{
+  width: calc((100% - 50px) / 6);
+  margin: 5px;
+}
 
-
-
-
-
+.album img{
+  width: 100%;
+}
 
 
 
