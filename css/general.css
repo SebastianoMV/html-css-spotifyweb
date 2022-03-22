@@ -6,7 +6,16 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
 
 
