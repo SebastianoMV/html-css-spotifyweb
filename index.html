@@ -18,18 +18,23 @@
 
   <main class="display-flex">
 
-    <aside class="display-flex column">
+    <aside class="">
 
       <!-- SMARTPHONE -->
-      <div class="aside-smartphone">
+      <div class=" aside-smartphone">
+        <div class="smartphone-top">
         <img src="img/logo-small.svg" alt="logo">
         <img src="img/home.svg" alt="Home">
         <img src="img/search.svg" alt="Menu">
         <img src="img/libreria.svg" alt="Libreria">
+        </div>
+        <div class="smartphone-bot">
+
+        </div>
       </div>
-      
+      <div class="aside-top">
       <!-- MENU ASIDE -->
-      <div class="display-flex column menu-aside">
+      <div class=" menu-aside">
         <div class="logo">
          <img src="img/logo.svg" alt="Logo Spotify">
         </div>
@@ -48,7 +53,7 @@
       </div>
 
       <!-- PLAYLIST ASIDE -->
-      <div class="display-flex column playlist">
+      <div class=" playlist">
         <h4>PLAYLIST</h4>
         <div>
           <i class="fa-solid fa-square-plus"></i>
@@ -64,9 +69,10 @@
           <li><a href="">Nome Playlist</a></li>
         </ul>
       </div>
+      </div>  
 
       <!-- BOTTOM ASIDE -->
-      <div class="bottom-aside">
+      <div class="bottom-aside display-flex">
         <i class="fa-solid fa-circle-plus"></i>
         <span>Installa app</span>
       </div>
@@ -97,34 +103,93 @@
 
       <section class="recently display-flex">
         <div class="album">
-          <img src="img/frah-contento.jpg" alt="Album">
+          <div class="img">
+            <img src="img/frah-contento.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> Contento</h4>
           <span>Frah Quintale</span>
+          
         </div>
         <div class="album">
-          <img src="img/willie-peyote.jpg" alt="Album">
+          <div class="img">
+            <img src="img/willie-peyote.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> Willie Peyote</h4>
           <span>Educazione Sabauda</span>
         </div>
         <div class="album">
-          <img src="img/queenii.jpg" alt="Album">
+          <div class="img">
+            <img src="img/queenii.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> Queen</h4>
           <span>Queen II</span>
         </div>
         <div class="album">
-          <img src="img/RATM.jpg" alt="Album">
+          <div class="img">
+            <img src="img/RATM.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> Rage Against The Machine</h4>
           <span>Rage Against The Machine</span>
         </div>
         <div class="album">
-          <img src="img/zencircus.jpg" alt="Album">
+          <div class="img">
+            <img src="img/zencircus.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> The Zen Circus</h4>
           <span>Andate Tutti Affanculo</span>
         </div>
         <div class="album">
-          <img src="img/Caparezza.png" alt="Album">
+          <div class="img">
+            <img src="img/Caparezza.png" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
           <h4> Caparezza</h4>
           <span>Museica</span>
+        </div>
+      </section>
+
+      <h2>Creato per Sebastian Lee</h2>
+      <span> Più ascolti, più accurati saranno i suggerimenti</span>
+      <section class="creato-per display-flex">
+        <div class="album">
+          <div class="img">
+            <img src="img/mix-2010.png" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
+          <h4> Mix anni 2010</h4>
+        </div>
+        <div class="album">
+          <div class="img">
+            <img src="img/rock-ita.png" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
+          <h4>Rock Italia</h4>
+        </div>
+      </section>
+
+      <h2>Ascolti più popolari</h2>
+      <span> Più ascolti, più accurati saranno i suggerimenti</span>
+      <section class="piu-popolari display-flex">
+        <div class="album ">
+          <div class="img">
+            <img class="album-circle" src="img/stefano-corradi.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
+          <h4> Stefano Corradi</h4>
+          <span>Sapevi</span>
+        </div>
+        <div class="album ">
+          <div class="img">
+            <img class="album-circle" src="img/damn.jpg" alt="Album">
+            <i class="fa-regular fa-circle-play"></i>
+          </div>
+          <h4>Kendrick Lamar</h4>
+          <span>Damn</span>
         </div>
       </section>
 
@@ -142,23 +207,23 @@
   <!-- FOOTER -->
 
   <footer class="display-flex space-between">
-    <div class="nav-left display-flex space-between">
+    <div class="nav-left display-flex space-around">
        <img src="img/frah-contento.jpg" alt="Brano in riproduzione">
         <div>
           <h5>Frah Quintale</h5>
           <p>Contento</p>
         </div>
+       <div class="icone-a-destra">
         <i class="fa-regular fa-heart"></i>
         <i class="fa-regular fa-folder"></i>
+      </div>
     </div>
 
     <div class="nav-center display-flex column space-evenly">
       <div class="comand display-flex space-between">
         <i class="fa-solid fa-shuffle"></i>
         <i class="fa-solid fa-backward-step"></i>
-        <div class="circle-play">
-          <i class="fa-solid fa-play"></i>
-        </div>
+        <i class="fa-regular fa-circle-play"></i>
         <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-arrow-rotate-right"></i>
       </div>
@@ -172,7 +237,7 @@
 
     </div>
 
-    <div class="nav-right display-flex space-between">
+    <div class="nav-right display-flex space-evenly">
        <i class="fa-solid fa-list"></i>
        <i class="fa-solid fa-desktop"></i>
        <i class="fa-solid fa-volume-high"></i>

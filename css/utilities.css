@@ -32,10 +32,38 @@
 .album{
   width: calc((100% - 50px) / 6);
   margin: 5px;
+  text-align: center;
+  
+}
+
+.img{
+  position: relative;
 }
 
 .album img{
   width: 100%;
+}
+
+.album:hover img{
+  filter: brightness(0.4);
+}
+
+.album:hover .img i{
+  display: inline-block;
+}
+
+.album .img i{
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.album-circle{
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 
