@@ -13,7 +13,6 @@ main{
 }
 
 aside{
-  padding: 10px;
   width: 250px;
   flex-shrink: 0;
   background-color: black;
@@ -29,9 +28,10 @@ aside{
   line-height: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-left: 10px;
 }
 .menu-aside{
-  height: 30%;
+  height: 28%;
   overflow: hidden;
 }
 
@@ -41,13 +41,24 @@ aside{
 }
 
 .playlist{
-  height: calc(100% - 30%);
+  height: calc(100% - 28%);
   overflow: hidden;
+  padding-left: 10px;
 }
 
 .playlist ul{
   overflow: auto;
   height: calc(100% - 80px);
+}
+
+.playlist h4{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.playlist i{
+  font-size: 40px;
+  vertical-align: middle;
 }
 
 .ul-aside li{
@@ -56,36 +67,41 @@ aside{
 
 .top-aside{
   height: calc(100% - 80px);
-
+  
 }
 
 .bottom-aside{
  height: 80px;
+ padding: 10px;
 }
-
-.playlist h4{
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.playlist i{
-  font-size: 40px;
-}
-
 
 .bottom-aside div{
-  margin-top: 10px;
-  padding-top: 20px;
+  margin-top: 5px;
+  padding-top: 10px;
   border-top: 1px solid #595959;
 }
 
-.bottom-aside img{
+.bottom-aside img,
+.smartphone-bot img{
   background-color: #595959;
   border-radius: 50%;
   width: 25px;
   vertical-align: middle;
 }
+
+.bottom-aside div span{
+  color: white;
+}
+
+/* HOVER ASIDE */
+
+.ul-aside li a:hover,
+.icon-menu:hover,
+.bottom-aside span:hover,
+.playlist div:hover{
+  color: white;
+}
+
 
 
 /* /ASIDE */
@@ -144,9 +160,16 @@ aside{
   margin: 10px;
 }
 
-.ul-main ul li:hover{
+.ul-main .active-underline{
+  height: 3px;
+  width: 30px;
+  background-color: #acfe2f;
+  margin-left: 35%;
+  margin-top: 5px;
+}
+
+.ul-main ul li:hover a{
   color: white;
-  margin: 10px;
 }
 
 
@@ -207,16 +230,18 @@ footer{
 }
 
 .icone-a-destra{
+  color: #6f6f6f;
 }
 
 .comand{
   min-width: 200px;
-  align-items: baseline;
+  align-items: center;
+  height: 40px;
 }
 
 .canzone-play{
   width: 100%;
-  align-items: baseline;
+  align-items: center;
 }
 
 .comand .fa-solid{
@@ -232,6 +257,7 @@ footer{
   height: 5px;
   border-radius: 50px;
   background-color: #595959;
+  position: relative;
 }
 
 .barra-lunga{
@@ -250,4 +276,40 @@ footer{
 .barra-mini-corta{
   width: 20%;
   background-color: #bfbfbf;
+}
+
+
+/* FOOTER HOVER */
+
+.nav-left span:hover{
+  text-decoration: underline;
+}
+
+.icone-a-destra .fa-heart:hover,
+.icone-a-destra .fa-folder:hover{
+  color: white;
+}
+
+.comand .fa-regular:hover{
+  font-size: 35px;
+}
+
+.barra:hover .barra-corta, 
+.barra:hover .barra-mini-corta{
+  background-color: #acfe2f;
+}
+
+.circle{
+  position: absolute;
+  background-color: #acfe2f;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 19%;
+  bottom: -5px;
+  display: none;
+}
+
+.barra:hover .circle{
+  display: inline-block;
 }

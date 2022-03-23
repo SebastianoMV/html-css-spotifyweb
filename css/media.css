@@ -9,7 +9,7 @@
   
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 750px) {
   .album{
     width: calc((100% - 50px) / 2);
   }
@@ -23,18 +23,31 @@
     display: none;
   }
 
-
   aside{
     width: 50px;
     padding: 10px;
+    height: 100%;
   }
 
   .aside-smartphone{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .aside-smartphone img{
     margin-bottom: 5px;
+  }
+
+  .aside-smartphone .smartphone-bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smartphone-bot i{
+    margin: 10px;
   }
 
   .container .premium{
