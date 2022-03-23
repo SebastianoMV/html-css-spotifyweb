@@ -13,12 +13,12 @@ main{
 }
 
 aside{
+  padding: 10px;
   width: 250px;
   flex-shrink: 0;
   background-color: black;
   color: #6f6f6f;
   height: 100%;
-  justify-content: flex-start;
 }
 
 .logo img{
@@ -31,8 +31,8 @@ aside{
   margin-bottom: 5px;
 }
 .menu-aside{
-  
-  overflow: auto;
+  height: 30%;
+  overflow: hidden;
 }
 
 .icon-menu img{
@@ -41,21 +41,50 @@ aside{
 }
 
 .playlist{
-  
+  height: calc(100% - 30%);
+  overflow: hidden;
+}
+
+.playlist ul{
   overflow: auto;
-  width: 100%;
+  height: calc(100% - 80px);
 }
 
 .ul-aside li{
   margin: 10px 0 10px 0;
 }
 
-.aside-top{
+.top-aside{
   height: calc(100% - 80px);
+
 }
 
 .bottom-aside{
  height: 80px;
+}
+
+.playlist h4{
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.playlist i{
+  font-size: 40px;
+}
+
+
+.bottom-aside div{
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #595959;
+}
+
+.bottom-aside img{
+  background-color: #595959;
+  border-radius: 50%;
+  width: 25px;
+  vertical-align: middle;
 }
 
 
@@ -86,7 +115,7 @@ aside{
   display: inline-block;
   position: absolute;
   top: 20px;
-  right: 5px;
+  right: 20px;
   color: white;
   padding: 10px 30px;
   border: 1px solid white;
