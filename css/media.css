@@ -54,4 +54,64 @@
     width: calc( 100% - 50px);
   }
 
+
+
+  /* Modifiche aggiuntive al Footer per renderlo più responsive per fare qualche test. Sotto i 300px comunque diventa ingestibile con i comandi troppo piccoli e con font e hover album  troppo piccoli. Sono comunque elementi facilmente modificabili ma limitandosi ad una visione per smartphone non sembra utile scendere al di sotto dei 300px. 
+  Comunque fino al commit precedente c'è la versione senza questa piccola aggiunta, però con una piccola differenza nel nav-left alla quale da questa versione c'è un piccolo margine in più per separare ulteriormente le icone dall'artista.*/
+  
+  .premium-btn{
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 15px;
+  }
+
+  .nav-left{
+    width: 100px;
+    flex-wrap: wrap
+  }
+  
+  .nav-left .icone-a-destra{
+    margin-left: 0;
+  }
+
+  .nav-left img{
+    display: none;
+  }
+
+  .nav-center{
+    width: calc(100% - 200px);
+  }
+
+  .comand{
+    min-width:100%;
+  }
+  
+  .comand .fa-solid{
+    font-size: 10px;
+  }
+  
+  .comand .fa-regular{
+    font-size: 20px;
+  }
+
+  .nav-right{
+    width: 100px;
+    flex-wrap: wrap
+  }
+  
+  .nav-right .fa-list,
+  .nav-right .fa-desktop{
+    display: none;
+  }
+
+
+  
+
+
+
+
 }
