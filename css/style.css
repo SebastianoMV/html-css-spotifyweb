@@ -20,6 +20,9 @@ aside{
   height: 100%;
 }
 
+.logo{
+  margin: 10px;
+}
 .logo img{
   width: 75%;
 }
@@ -31,8 +34,8 @@ aside{
   padding-left: 10px;
 }
 .menu-aside{
-  height: 28%;
-  overflow: hidden;
+  height: 200px;
+  overflow: auto;
 }
 
 .icon-menu img{
@@ -41,7 +44,7 @@ aside{
 }
 
 .playlist{
-  height: calc(100% - 28%);
+  height: calc(100% - 200px);
   overflow: hidden;
   padding-left: 10px;
 }
@@ -67,7 +70,7 @@ aside{
 
 .top-aside{
   height: calc(100% - 80px);
-  
+  overflow: hidden;
 }
 
 .bottom-aside{
@@ -229,6 +232,10 @@ footer{
   height: 50px;
 }
 
+.nav-left span{
+  color: #6f6f6f;
+}
+
 .icone-a-destra{
   color: #6f6f6f;
 }
@@ -283,6 +290,7 @@ footer{
 
 .nav-left span:hover{
   text-decoration: underline;
+  color: white;
 }
 
 .icone-a-destra .fa-heart:hover,
