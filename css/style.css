@@ -134,7 +134,7 @@ aside{
   display: inline-block;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 40px;
   color: white;
   padding: 10px 30px;
   border: 1px solid white;
@@ -142,12 +142,7 @@ aside{
 }
 
 .premium-btn:hover{
-  top: 15px;
-  right: 5px;
-  color: white;
-  padding: 15px 40px;
-  border: 1px solid white;
-  border-radius: 50px;
+  transform: scale(120%);
 }
 
 .ul-main{
@@ -300,7 +295,7 @@ footer{
 }
 
 .comand .fa-regular:hover{
-  font-size: 35px;
+  transform: scale(120%);
 }
 
 .barra:hover .barra-corta, 
